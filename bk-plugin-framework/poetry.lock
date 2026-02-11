@@ -201,14 +201,14 @@ files = [
 
 [[package]]
 name = "bk-plugin-runtime"
-version = "2.1.5"
+version = "2.1.6rc0"
 description = "bk plugin python django runtime"
 optional = false
-python-versions = "<4.0.0,>=3.8.0"
+python-versions = ">=3.8.0,<4.0.0"
 groups = ["main"]
 files = [
-    {file = "bk_plugin_runtime-2.1.5-py3-none-any.whl", hash = "sha256:6b00204413299b626a658103ebc25c9a07dc988d09e344b7cf583c545df38e04"},
-    {file = "bk_plugin_runtime-2.1.5.tar.gz", hash = "sha256:170c9fe52938dd6866655a26e3160f3d21ac7190552e033899564e5e12bc999b"},
+    {file = "bk_plugin_runtime-2.1.6rc0-py3-none-any.whl", hash = "sha256:a3e3c1c33f37a747b11899c9738a0cf931ac066d20c0fcbcef0d782ce9032094"},
+    {file = "bk_plugin_runtime-2.1.6rc0.tar.gz", hash = "sha256:4798c10f425ad32b5a40d0530487296c7fa196debe3c1111b9bba394f137cb39"},
 ]
 
 [package.dependencies]
@@ -228,6 +228,11 @@ protobuf = ">=3.19.4,<6.0"
 pymysql = ">=1,<2"
 raven = ">=6.5.0,<7.0.0"
 redis = ">=2.10.5,<6"
+
+[package.source]
+type = "legacy"
+url = "https://mirrors.tencent.com/repository/pypi/tencent_pypi/simple"
+reference = "tencent"
 
 [[package]]
 name = "bkapi-bk-apigateway"
@@ -4534,4 +4539,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.8.0,<4.0"
-content-hash = "d386ca91c926fb454c8342cef6d432fccc350810c61ebd530ae83970be3a12e7"
+content-hash = "5158970691d22712d19f2e74ab12b3d4d00c441572800470cb002a139f1a644a"
